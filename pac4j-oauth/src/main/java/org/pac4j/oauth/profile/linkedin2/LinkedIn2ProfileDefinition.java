@@ -58,7 +58,8 @@ public class LinkedIn2ProfileDefinition extends OAuth20ProfileDefinition<LinkedI
 
     @Override
     public String getProfileUrl(final OAuth2AccessToken accessToken, final LinkedIn2Configuration configuration) {
-        return "https://api.linkedin.com/v1/people/~:(" + configuration.getFields() + ")?format=json";
+//        return "https://api.linkedin.com/v1/people/~:(" + configuration.getFields() + ")?format=json";
+        return "https://api.linkedin.com/v2/me";
     }
 
     @Override
